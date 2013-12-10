@@ -1,0 +1,148 @@
+@font-face {}
+
+html {height: 100%;}
+body {min-height:100%; height:auto !important; height:100%; font-family: 'Open Sans'; }
+
+h1 {}
+h2 {}
+h3 {font-size: 18px; line-height: 21px; text-transform: uppercase; color:#eb4353;}
+p {font-size: 13px; line-height: 16px; color: #000;}
+input {position: relative; background: #fff; } 
+
+.wrapper {min-width: 960px; max-width: 1200px; margin: 0 auto;}
+
+/* --------------------- шапка ---------------------- */
+header{position: relative; width: 100%; background: url(../images/pattern.png) top center no-repeat;}
+	.topbar {position: relative; width: 100%; background:#f5f4f4; height:35px; padding-top:10px;}
+		.search {position: relative; float: right; outline: 1px solid #000;}
+        .search select{float:left;}
+        .search input{padding:3px;}
+        .search_input{float:right;}
+        .search_input a{background:#fff;}
+		.social_likes {position: relative; left: 30%;  width:450px;}
+        .social_likes ul li{ float:left; list-style:none;}
+        .social_likes ul li a{text-decoration:none; color:#000;display:block; margin-right:20px;width:70px; height:25px;}
+        .social_likes ul li a span{float:right; margin:5px 0 0 5px; font-weight:bold;}
+
+        .social_likes-item.fb{ background:url(../images/social_likes_bg.png) 0 0 no-repeat;}
+        .social_likes-item.fb:hover{ background:url(../images/social_likes_bg.png) 0 24px;}
+
+        .social_likes-item.vk{ background:url(../images/social_likes_bg.png) -70px 0 no-repeat;}
+        .social_likes-item.vk:hover{ background:url(../images/social_likes_bg.png)-70px 24px;}
+
+        .social_likes-item.tw{ background:url(../images/social_likes_bg.png) -140px 0 no-repeat;}
+        .social_likes-item.tw:hover{ background:url(../images/social_likes_bg.png) -140px 24px;}
+
+        .social_likes-item.gplus{ background:url(../images/social_likes_bg.png) -210px 0 no-repeat;}
+        .social_likes-item.gplus:hover{ background:url(../images/social_likes_bg.png) -210px 24px;}
+
+        .social_likes-item.ok{ background:url(../images/social_likes_bg.png) -280px 0 no-repeat;}
+        .social_likes-item.ok:hover{ background:url(../images/social_likes_bg.png) -280px 24px;}
+
+        .form{margin:10px auto; }
+        .subscribe_email{border:3px solid #84bc5a; border-radius:3px; -moz-border-radius:3px;-webkit-border-radius:3px;-o-border-radius:3px; }
+        .subscribe_submit{background:#84bc5a; color:#fff; padding:2px 10px; margin-left:10px;  border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px;}
+
+	.middlebar {position: relative;} 
+		.options {position: relative; float: right; margin-top:25px;}
+        .mycart{display:block; width:135px; padding:5px 20px; background:url("../images/mycart.png") no-repeat 20px #eb4353; text-decoration:none; color:#fff; text-align:right;}
+        .signin, .register{color:#eb4353; text-decoration:none;}
+		.logo {position: relative; float: left; width:300px; text-align:center; margin-top: 15px; }
+        .logo a{color:#84bc5a; text-decoration:none; font-size:32px; font-weight:bold;line-height: 23px;}
+        .logo span{font-size:18px; color:#666;}
+		.subscribe {position: relative; width: 50%; margin:10px auto; text-align: center;}
+        .subscribe {font-weight:bold;}
+
+        .nav{position:relative;background: url(../images/header_bg.png) 0 0 repeat-x;height:40px; margin-bottom:25px;float:left;width:100%;z-index:100}
+        .nav ul {clear:left; position:relative; right:50%; height:40px; float:right; text-align:center; list-style:none;}
+        .nav ul li { position:relative; left:50%;float:left; height:40px;}
+        .nav ul li a {display:block; color: #fff;  text-decoration: none; padding:12px;}
+        .nav ul li:hover a,
+        .nav ul li.hover a,
+        .nav ul li.active a {color:#000;}
+
+        .nav ul li:hover,
+        .nav ul li.hover,
+        .nav ul li.active {background: #f5f4f4;}
+        .subitem_red{background: url(../images/menu_bg.png);}
+        .subitem_red.active a {background:#f5f4f4;}
+
+        .nav ul li ul {position:absolute;left:0;top:40px; font-size:12px;  display:none;  list-style:none;  visibility:hidden;  width:128px;}
+        .nav ul li ul li {background:#f5f4f4; position:relative; left:0; display:list-item; float:none; height:auto;text-align:left;}
+        .nav ul li ul li a { padding:6px 5px;color:#b5b5b5;}
+        .nav ul li ul li a:hover{color:#84bc5a;}
+        .nav ul li:hover ul,
+        .nav ul li.hover ul{display:block;}
+
+        .nav  ul li:hover > ul {opacity: 1;visibility: visible;}
+
+/* --------------------- контент ---------------------- */
+section {position: relative; width: 100%;}
+	.leftbar {position: relative; float:left; width: 25%;} 
+		.banner {  }
+		.banner  ul li { float: left; }
+		.banner .banner_pag {text-align: center;padding: 12px 0 6px;margin: 0;}
+		.banner .banner_pag a {background: url(../images/dots.png) -12px 0 no-repeat transparent; width: 12px; height: 12px; margin: 0 3px 0 0; display: inline-block; padding: 0;}
+		.banner .banner_pag a.selected { background-position: 0 0; cursor: default;}
+		.banner .banner_pag a span {display: none;}
+
+	.main {position: relative; margin-left:26%;} 
+		.catalog {position: relative; width: 100%;}
+		.catalog-item {position: relative; float:left; width: 31%; margin-left: 2%; margin-top:20px;}
+        .catalog-item a{color:#000; text-decoration:none;}
+        .catalog-item .catalog-name{width:225px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+		.catalog-img {position: relative; width:100%; height:195px;  margin:15px 0;}
+		.catalog-img img {width:100%; height:100%;}
+		.extra {position: absolute; top: 0; right: 0; background:url(../images/discount_bg.png) no-repeat; height:100px ; text-align:center; color:#fff; padding:5px; width:90px;}
+        .extra span{display:block; font-weight:bold; margin-top:5px; font-size:18px;}
+
+	.partners {position:relative; background:#ebcd43;}
+	.partners ul li {float:left;}
+    .partners ul li a img {margin:10px 35px;}
+
+		.partners a.partners_prev, .partners a.partners_next { background: url(../images/partners_arrows.png) no-repeat transparent;width: 22px; height: 34px; display: block; position: absolute; top:20px;}
+		.partners a.partners_prev {left:15px; background-position: 0 0; }
+		.partners a.partners_next {right:15px; background-position: -22px 0; }
+		.partners a.partners_prev span, .partners a.partners_next span { display: none;}
+        .partners .partners_pag{width:100%;margin:10px 0; position:absolute; text-align:center;}
+        .partners .partners_pag a {background: url(../images/dots.png) -12px 0 no-repeat transparent; width: 12px; height: 12px; margin: 0 3px 0 0; display: inline-block; padding: 0;}
+		.partners .partners_pag a.selected { background-position: 0 0; cursor: default;}
+		.partners .partners_pag a span {display: none;}
+		
+		
+/* --------------------- футтер ---------------------- */
+footer {background:#f5f4f4; height:60px; padding:40px 0 20px 0; margin-top:35px;}
+
+        .logo-small{float:right;}
+        .logo-small a{color:#b5b5b5; font-size:23px; text-decoration:none; }
+        .logo-small p{color:#b5b5b5; margin-top:5px;}
+
+        .menu-small{ width:450px; margin: 0 auto;}
+        .menu-small ul li{text-align:center; float:left; }
+        .menu-small ul li a{color:#b5b5b5; margin-right:35px; text-decoration:dashed;}
+        .menu-small ul li a:hover{text-decoration:none;}
+
+        .madeby{float:left;}
+
+        .social_media p{font-weight:bold; font-size:15px; margin:10px 0; float:left;}
+        .social {position:relative;}
+        .social-item {position:relative; float:left; width:30px; height:30px; background: url(../images/socials_bg.png) 0 0 no-repeat; margin:5px;}
+        .social-item.fb {background-position:0 0 ;}
+        .social-item.vk {background-position:-30px 0 ;}
+        .social-item.tw {background-position:-60px 0 ;}
+        .social-item.gplus {background-position:-90px 0 ;}
+        .social-item.ok {background-position:-120px 0 ;}
+        .social--green .social-item.fb:hover {background-position:0 -30px ;}
+        .social--green .social-item.vk:hover {background-position:-30px -30px ;}
+        .social--green .social-item.tw:hover {background-position:-60px -30px ;}
+        .social--green .social-item.gplus:hover {background-position:-90px -30px ;}
+        .social--green .social-item.ok:hover {background-position:-120px -30px ;}
+        .social--yellow .social-item.fb:hover {background-position:0 -60px ;}
+        .social--yellow .social-item.vk:hover {background-position:-30px -60px ;}
+        .social--yellow .social-item.tw:hover {background-position:-60px -60px ;}
+        .social--yellow .social-item.gplus:hover {background-position:-90px -60px ;}
+        .social--yellow .social-item.ok:hover {background-position:-120px -60px ;}
+
+        .popup {display:none; width:230px; background:#fff; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+        .popup-wrapper {position:relative; padding:15px;}
+        .close {position:absolute; top:-12px; right:-12px; width:20px; height:20px; background: url(../images/close.png) 0 0 no-repeat;}
