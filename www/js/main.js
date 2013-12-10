@@ -5,6 +5,7 @@ $(document).ready(function() {
 			items: 1,
 			auto : false, 
 			width: '100%',
+			responsive: true,
 			pagination	: "#banner_pag"
 		});
 	}
